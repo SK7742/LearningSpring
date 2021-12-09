@@ -1,0 +1,34 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	
+	<bean id="e1" class="beans.Engine">
+		<property name="modelYear" value="2013"></property>
+	</bean>
+	<bean id="e2" class="beans.Engine">
+		<property name="modelYear" value="2014"></property>
+	</bean>
+	<bean id="e3" class="beans.Engine">
+		<property name="modelYear" value="2015"></property>
+	</bean>
+	<bean id="car1" class="beans.Car">
+		<property name="carNames">
+			<list>
+				<value>Audi</value>
+				<value>Honda</value>
+				<value>Benz</value>
+			</list>
+		</property>
+		
+		<property name="engine">
+			<list>
+				<ref bean="e1"/>
+				<ref bean="e2"/>
+				<ref bean="e3"/>
+			</list>
+		</property>
+	</bean>
+   
+</beans>

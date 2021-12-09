@@ -18,7 +18,7 @@ public class Test {
 	public void setCc(Map cc) {
 		this.cc = cc;
 	}
-	private void printData() {
+	public void printData() {
 		System.out.println("Fruits.....");
 		fruits.forEach((c) -> System.out.println(c));
 		
