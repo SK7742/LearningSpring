@@ -4,6 +4,18 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
    
+   <bean id="t" class="beans.Test" scope="prototype">
+   		<property name="driver">
+   			<props>
+   				<prop key="driverclass">com.mysql.jdbc.DriverT</prop>
+   				<prop key="url">MySQL url</prop>
+   				<prop key="username">root</prop>
+   				<prop key="password">root</prop>
+   			</props>
+   		</property>
+   </bean>
+   
+   <!--  
    <bean id="t" class="beans.Test">
    		<property name="fruits">
    			<util:list list-class="java.util.Vector">
@@ -29,4 +41,5 @@
    		
    		</property>
    </bean>
+   -->
 </beans>
