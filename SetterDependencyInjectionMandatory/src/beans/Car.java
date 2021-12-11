@@ -11,8 +11,8 @@ public class Car {
 	}
 	
 	public void printCarData() {
-		System.out.println("carName:"+carName);
-		System.out.println("ModelYear"+engine.getModelYear());
+		System.out.println("carName: "+carName);
+		System.out.println("ModelYear: "+engine.getModelYear());
 		
 	}
 }

@@ -1,0 +1,4 @@
+1. #For dependency-check None, it will not going to check for the values, and object of the class will be intialized.
+2. #For dependency-check simple, it will going to check for the values of primitive type, if it not mentioned in the bean then exception will be occured.
+3. #For dependency-check object, it will going to check for the values of secondary type, if it not mentioned in the bean then exception will be occured.
+4. #For dependency-check all, it will going to check for the values of secondary type and primitive type, if it not mentioned in the bean then exception will be occured.
