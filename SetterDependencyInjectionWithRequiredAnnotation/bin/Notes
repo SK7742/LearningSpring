@@ -1,0 +1,10 @@
+In Case of Dependency Check attribute, We need to set either none/normal/objects/all.
+Suppose we are working with oracle db then we need all details like, connection url, username, password etc, then as we 
+know all these properties are mandatory to pass while connection creation then for this scenario we can proceed with
+dependency check attribute.
+But If we are working with MySQL DB then password is an optional field so it may or may not to be configured for the password.
+So in this case we need to pass all the attribute except password, So if we use dependency-check attribute then it is not possible to 
+avoid the password field settor method, Hence we can't use dependency-check attribute here.
+
+To Overcome this issue, @Required attribute is used.
+if we want to invoke setter method of a particular data then we will use @Required annotation.
