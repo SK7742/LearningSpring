@@ -1,13 +1,13 @@
-package test;
+package app;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import beans.Car;
+public class App {
 
-public class Client {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		
 		ApplicationContext context = new ClassPathXmlApplicationContext("resources/spring.xml");
-		Car t = (Car) context.getBean("car1");
-		t.printCarData();
 	}
+
 }
