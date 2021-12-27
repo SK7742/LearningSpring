@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Car {
 	@Autowired
-	@Qualifier(value = "carEngine")
+	@Qualifier("carEngine")
 	private Engine engine;
 
 	//In case of autowired annotation no need to write setter or constructors
