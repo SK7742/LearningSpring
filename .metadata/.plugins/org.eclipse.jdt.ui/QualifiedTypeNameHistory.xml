@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="beans.Engine"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -19,4 +18,10 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="beans.Bus"/>
+    <fullyQualifiedTypeName name="beans.Engine"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver"/>
 </qualifiedTypeNameHistroy>
