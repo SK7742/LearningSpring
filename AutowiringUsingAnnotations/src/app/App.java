@@ -7,8 +7,7 @@ import beans.Car;
 
 public class App {
 	public static void main(String[] args) {
-//		ApplicationContext context = new ClassPathXmlApplicationContext("resources/autowiringByType.xml");
-		ApplicationContext context = new ClassPathXmlApplicationContext("resources/autowiringAutoDetect.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("resources/spring.xml");
 		Car c = (Car)context.getBean("car");
 		c.printData();
 	}

@@ -1,0 +1,17 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- engine name is mapped in class Engine so in case of autowiring by name this bean will used to dependency Injection
+	if this bean is commented then it will inject null value -->
+	<bean id ="engine" class="beans.Engine">
+		<property name="modelYear" value="2021"></property>
+	</bean>
+	
+	<bean id ="engine1" class="beans.Engine" autowire-candidate="false">
+		<property name="modelYear" value="2021"></property>
+	</bean>
+	<bean id="car" class="beans.Car" autowire="constructor">
+	</bean>
+</beans>
