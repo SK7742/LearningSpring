@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id ="engine" class="beans.Engine">
+		<property name="modelYear" value="2021"></property>
+	</bean>
+	<!-- here autowiring byType will search for the bean having class type Engine
+       if this bean is uncommented it will throws an exception: UnsatisfiedDependencyException
+       to bypass this we need to configure it autowire-candidate=false
+	<bean id ="engine1" class="beans.Engine">
+		<property name="modelYear" value="2021"></property>
+	</bean> -->
+	
+	<bean id ="engine1" class="beans.Engine" autowire-candidate="false">
+		<property name="modelYear" value="2021"></property>
+	</bean>
+	<bean id="car" class="beans.Car" autowire="byType">
+	</bean>
+</beans>

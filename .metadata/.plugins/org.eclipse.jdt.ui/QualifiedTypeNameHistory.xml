@@ -18,4 +18,5 @@
     <fullyQualifiedTypeName name="beans.Test"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
