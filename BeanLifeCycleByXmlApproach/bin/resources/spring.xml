@@ -1,7 +1,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-	<bean id="t" class="beans.Test">
+	<bean id="t" class="beans.Test" init-method="connectionInit" destroy-method="connectionCleanup">
 		<property name="driver" value="com.mysql.cj.jdbc.Driver"></property>
 		<property name="url" value="jdbc:mysql://localhost:3306/exam_platform"></property>
 		<property name="username" value="root"></property>

@@ -2,11 +2,12 @@ package beans;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Test implements InitializingBean, DisposableBean{
+public class Test{
 
 	private String driver,url,username,password;
 	public Connection con = null;
@@ -42,16 +43,14 @@ public class Test implements InitializingBean, DisposableBean{
 		this.password = password;
 	}
 
-	@Override
-	public void afterPropertiesSet() throws Exception {
+	public void connectionInit() throws Exception{
 		System.out.println("Executing afterPropertiesSet (Init) Method");
 		Class.forName(driver);
 	    con = DriverManager.getConnection(url, username, password);
 		System.out.println(con.toString());
 	}
 
-	@Override
-	public void destroy() throws Exception {
+	public void connectionCleanup() throws Exception {
 		System.out.println("Executing destroy Method");
 		con.close();
 	}
