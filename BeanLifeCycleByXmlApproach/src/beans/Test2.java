@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Test{
+public class Test2{
 
 	private String driver,url,username,password;
 	public Connection con = null;
@@ -44,14 +44,14 @@ public class Test{
 	}
 
 	public void init() throws Exception{
-		System.out.println("Executing afterPropertiesSet (Test Init) Method");
+		System.out.println("Executing Test1 afterPropertiesSet (Init) Method");
 		Class.forName(driver);
 	    con = DriverManager.getConnection(url, username, password);
 		System.out.println(con.toString());
 	}
 
 	public void destroy() throws Exception {
-		System.out.println("Executing Test destroy Method");
+		System.out.println("Executing Test2 destroy Method");
 		con.close();
 	}
 }
