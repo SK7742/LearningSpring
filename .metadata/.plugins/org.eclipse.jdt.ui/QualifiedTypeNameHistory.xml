@@ -38,4 +38,5 @@
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    <fullyQualifiedTypeName name="beans.Bank"/>
 </qualifiedTypeNameHistroy>

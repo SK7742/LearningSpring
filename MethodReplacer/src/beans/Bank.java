@@ -8,7 +8,7 @@ public class Bank {
 		System.out.println("withdraw method called...");
 	}
 	
-	//suppose we don't want use this defination for this method for some time then,
+	//suppose we don't want use this definition for this method for some time then,
 	//it can be replaced by method replacer beans.NewInterestCalculation
 	//this method will override using proxy class generated at runtime.
 	public void interestRate() {
