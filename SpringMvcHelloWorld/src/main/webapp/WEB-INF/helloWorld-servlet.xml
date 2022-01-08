@@ -1,15 +1,33 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-
-		<!-- handler -->
+<!-- 1st type handler mapping BeanNameUrlHandlerMapping
+		handler
 		<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
-		<!-- default handler mapping -->
+		default handler mapping
 		
-		<!-- controller -->
+		controller
 		<bean name="/hello.ds" class="controller.HelloController"></bean>
-		
+		 -->
 		<!-- view resolver  -->
+		
+		
+		<!-- 2nd type handler mapping 
+		<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+			<property name="mappings">
+				<props>
+				<prop key="/hello.ds">hc</prop>
+				</props>
+			</property>
+		</bean>
+		 -->
+		 
+		 
+		 <!-- 3rd type handler mapping -->
+		 <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"></bean>
+		
+		<bean id="hc" name="/hello.ds" class="controller.HelloController"></bean>
+		
 		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 			<property name="prefix" value="/"></property>
 			<property name="suffix" value=".jsp"></property>

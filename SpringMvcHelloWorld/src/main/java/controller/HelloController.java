@@ -18,5 +18,6 @@ public class HelloController implements Controller{
 		m.put("msg", "Hello..."+name);
 		ModelAndView mv = new ModelAndView("sucess",m);
 		return mv;
+		
 	}
 }
