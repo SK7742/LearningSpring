@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="SpringMvcHelloWorld" path="/SpringMvcHelloWorld" reloadable="true" source="org.eclipse.jst.jee.server:SpringMvcHelloWorld"/></Host>
+      <Context docBase="InitParameterXmlConfiguration" path="/InitParameterXmlConfiguration" reloadable="true" source="org.eclipse.jst.jee.server:InitParameterXmlConfiguration"/></Host>
     </Engine>
   </Service>
 </Server>
